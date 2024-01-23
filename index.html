@@ -7,7 +7,9 @@
   <title>Hockey</title>
 
   <!-- font aswam cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
   <!--tailwind and daisy ui cdn  -->
@@ -43,19 +45,21 @@
       font-family: 'Manrope', sans-serif;
     }
 
-    /* .boder{
-      
-*{border:1px solid red;}
-boder{body: 2px dashed blue;}
+    .boder {
 
-
-    } */
+      * {
+        border: 1px solid red;
+      }
+      boder {
+        body: 2px dashed blue;
+      }
+    }
   </style>
 
 
 </head>
 
-<body class="font-nanrope boder">
+<body class="font-nanrope">
 
   <header class="md:container md:mx-auto">
     <nav>
@@ -91,7 +95,7 @@ boder{body: 2px dashed blue;}
 
         <div class=" space-x-4">
           <!-- <img src="./Images/search.svg" alt=""> -->
-          <button class="text-white text-sm font-bold bg-[#FF4240] px-6 py-4 rounded-md ">Get Ticket</button>
+          <button class="text-white text-sm font-bold bg-[#FF4240] px-6 py-3 rounded-md ">Get Ticket</button>
         </div>
       </div>
     </nav>
@@ -112,7 +116,7 @@ boder{body: 2px dashed blue;}
           </div>
           <!-- slid 2 -->
           <div id="slide2" class="carousel-item relative w-full">
-            <img src="./Images/bannar2.jpg" class="w-full" />
+            <img src="./Images/2.png" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" class="btn btn-circle">❮</a>
               <a href="#slide3" class="btn btn-circle">❯</a>
@@ -122,7 +126,7 @@ boder{body: 2px dashed blue;}
 
           <!-- slid 3 -->
           <div id="slide3" class="carousel-item relative w-full">
-            <img src="./Images/banar3.jpg" class="w-full" />
+            <img src="./Images/3.png" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
 
               <a href="#slide2" class="btn btn-circle">❮</a>
@@ -133,7 +137,7 @@ boder{body: 2px dashed blue;}
 
           <!-- slid 4 -->
           <div id="slide4" class="carousel-item relative w-full">
-            <img src="./Images/banar4.jpg" class="w-full" />
+            <img src="./Images/4.png" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
 
               <a href="#slide3" class="btn btn-circle">❮</a>
@@ -254,22 +258,14 @@ boder{body: 2px dashed blue;}
 
   <section class="md:container md:mx-auto my-24 ">
 
-    <div class="grid grid col-span-1 lg:grid-cols-2">
+   
+<div class="grid lg:grid-cols-12 grid-cols-1 ">
 
-      <div class="row-span-2">
-        <img src="./Images/2.png" alt="">
-      </div>
 
-      <div class="row-span-1">
-        <img src="./Images/2.png" alt="">
-      </div>
+ 
 
-      <div class="col-span-1 row-span-4">
-        <img src="./Images/2.png" alt="">
-      </div>
 
-    </div>
-
+  
   </section>
 
 
@@ -288,221 +284,226 @@ boder{body: 2px dashed blue;}
 
   <!-- Our New Products card -->
 
-<section class="md:container md:mx-auto mb-10">
+  <section class="md:container md:mx-auto mb-10">
 
 
-<div class="grid gap-5 grid-cols-1 lg:grid-cols-2">
+    <div class="grid gap-5 grid-cols-1 lg:grid-cols-2"> 
 
-<!-- card 1 -->
-<div>
-  <div class="card card-side bg-base-100 shadow-sm ">
-    <figure><img src="./Images/5.png" alt="Movie"/></figure>
+      <!-- card 1 -->
+       <div>
+        <div class="card lg:card-side bg-base-100 shadow-sm ">
+          <figure><img src="./Images/5.png" alt="Movie" /></figure>
 
-    <div class="card-body">
+          <div class="card-body">
 
-      <div class="flex space-x-4">
-        <div class="flex items-center space-x-1">
-          <i class="fa-solid fa-star text-[#F99808]"></i>
-          <p>5.0</p>
+            <div class="flex space-x-4">
+              <div class="flex items-center space-x-1">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-brands fa-gratipay"></i>
+                <p>200</p>
+              </div>
+            </div>
+
+            <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
+            <p class="text-[16px] font-medium opacity-70">Our stylish Men's Multi-Sport Jacket provides the perfect
+              combination of performance and quality</p>
+            <div class="flex">
+              <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
+              <div class="flex items-center space-x-3 ">
+                <img src="./Images/shoping.svg" alt="">
+                <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-regular fa-eye"></i>
-          <p>20</p>
-        </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-brands fa-gratipay"></i>
-          <p>200</p>
-        </div>
-      </div>
+      </div> 
+      <!-- card 2 -->
+      <div>
+        <div class="card lg:card-side bg-base-100 shadow-sm">
+          <figure><img src="./Images/6.png" alt="Movie" /></figure>
 
-      <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
-      <p class="text-[16px] font-medium opacity-70">Our stylish Men's Multi-Sport Jacket provides the perfect combination of performance and quality</p>
-<div class="flex">
-  <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
-  <div class="flex items-center space-x-3 ">
-    <img src="./Images/shoping.svg" alt="">
-    <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-<!-- card 2 -->
-<div>
-  <div class="card card-side bg-base-100 shadow-sm">
-    <figure><img src="./Images/6.png" alt="Movie"/></figure>
+          <div class="card-body">
 
-    <div class="card-body">
+            <div class="flex space-x-4">
+              <div class="flex items-center space-x-1">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-brands fa-gratipay"></i>
+                <p>200</p>
+              </div>
+            </div>
 
-      <div class="flex space-x-4">
-        <div class="flex items-center space-x-1">
-          <i class="fa-solid fa-star text-[#F99808]"></i>
-          <p>5.0</p>
-        </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-regular fa-eye"></i>
-          <p>20</p>
-        </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-brands fa-gratipay"></i>
-          <p>200</p>
-        </div>
-      </div>
-
-      <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
-      <p class="text-[16px] font-medium opacity-70">First Nations flags will fly at the Women's World Cup in Australia and New Zealand for the first time when the tournament starts on 20 July.
-        </p>
-<div class="flex">
-  <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
-  <div class="flex items-center space-x-3 ">
-    <img src="./Images/shoping.svg" alt="">
-    <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-<!-- card 3 -->
-<div>
-  <div class="card card-side bg-base-100 shadow-sm">
-    <figure><img src="./Images/7.png" alt="Movie"/></figure>
-
-    <div class="card-body">
-
-      <div class="flex space-x-4">
-        <div class="flex items-center space-x-1">
-          <i class="fa-solid fa-star text-[#F99808]"></i>
-          <p>5.0</p>
-        </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-regular fa-eye"></i>
-          <p>20</p>
-        </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-brands fa-gratipay"></i>
-          <p>200</p>
+            <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
+            <p class="text-[16px] font-medium opacity-70">First Nations flags will fly at the Women's World Cup in
+              Australia and New Zealand for the first time when the tournament starts on 20 July.
+            </p>
+            <div class="flex">
+              <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
+              <div class="flex items-center space-x-3 ">
+                <img src="./Images/shoping.svg" alt="">
+                <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- card 3 -->
+      <div>
+        <div class="card lg:card-side bg-base-100 shadow-sm">
+          <figure><img src="./Images/7.png" alt="Movie" /></figure>
 
-      <h2 class="card-title font-extrabold text-[20px]">Cap For Hockeys</h2>
-      <p class="text-[16px] font-medium opacity-70">GNB CUSTOM EMBROIDERY LLC. Hockey Cap. Custom Embroidered 6089 Yupoong Snapback hat. Hockey Team or Player Name Cap</p>
-<div class="flex">
-  <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
-  <div class="flex items-center space-x-3 ">
-    <img src="./Images/shoping.svg" alt="">
-    <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-<!-- card 4 -->
-<div>
-  <div class="card card-side bg-base-100 shadow-sm">
-    <figure><img src="./Images/8.png" alt="Movie"/></figure>
+          <div class="card-body">
 
-    <div class="card-body">
+            <div class="flex space-x-4">
+              <div class="flex items-center space-x-1">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-brands fa-gratipay"></i>
+                <p>200</p>
+              </div>
+            </div>
 
-      <div class="flex space-x-4">
-        <div class="flex items-center space-x-1">
-          <i class="fa-solid fa-star text-[#F99808]"></i>
-          <p>5.0</p>
+            <h2 class="card-title font-extrabold text-[20px]">Cap For Hockeys</h2>
+            <p class="text-[16px] font-medium opacity-70">GNB CUSTOM EMBROIDERY LLC. Hockey Cap. Custom Embroidered 6089
+              Yupoong Snapback hat. Hockey Team or Player Name Cap</p>
+            <div class="flex">
+              <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
+              <div class="flex items-center space-x-3 ">
+                <img src="./Images/shoping.svg" alt="">
+                <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-regular fa-eye"></i>
-          <p>20</p>
-        </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-brands fa-gratipay"></i>
-          <p>200</p>
-        </div>
-      </div>
+      </div> 
+      <!-- card 4-->
+      <div>
+        <div class="card lg:card-side bg-base-100 shadow-sm">
+          <figure><img src="./Images/8.png" alt="Movie" /></figure>
 
-      <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
-      <p class="text-[16px] font-medium opacity-70">Our stylish Men's Multi-Sport T-shart provides the perfect combination of performance and quality</p>
-<div class="flex">
-  <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
-  <div class="flex items-center space-x-3 ">
-    <img src="./Images/shoping.svg" alt="">
-    <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-<!-- card 5 -->
-<div>
-  <div class="card card-side bg-base-100 shadow-sm">
-    <figure><img src="./Images/9.png" alt="Movie"/></figure>
+          <div class="card-body">
 
-    <div class="card-body">
+            <div class="flex space-x-4">
+              <div class="flex items-center space-x-1">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-brands fa-gratipay"></i>
+                <p>200</p>
+              </div>
+            </div>
 
-      <div class="flex space-x-4">
-        <div class="flex items-center space-x-1">
-          <i class="fa-solid fa-star text-[#F99808]"></i>
-          <p>5.0</p>
-        </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-regular fa-eye"></i>
-          <p>20</p>
-        </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-brands fa-gratipay"></i>
-          <p>200</p>
-        </div>
-      </div>
-
-      <h2 class="card-title font-extrabold text-[20px]">World Cup Hockey Helmat</h2>
-      <p class="text-[16px] font-medium opacity-70">Our stylish Men's Multi-Sport Hockey Helmat provides the perfect combination of performance and quality</p>
-<div class="flex">
-  <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
-  <div class="flex items-center space-x-3 ">
-    <img src="./Images/shoping.svg" alt="">
-    <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-<!-- card 6 -->
-<div>
-  <div class="card card-side bg-base-100 shadow-sm">
-    <figure><img src="./Images/10.png" alt="Movie"/></figure>
-
-    <div class="card-body">
-
-      <div class="flex space-x-4">
-        <div class="flex items-center space-x-1">
-          <i class="fa-solid fa-star text-[#F99808]"></i>
-          <p>5.0</p>
-        </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-regular fa-eye"></i>
-          <p>20</p>
-        </div>
-        <div class="flex items-center space-x-1">
-          <i class="fa-brands fa-gratipay"></i>
-          <p>200</p>
+            <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
+            <p class="text-[16px] font-medium opacity-70">Our stylish Men's Multi-Sport T-shart provides the perfect
+              combination of performance and quality</p>
+            <div class="flex">
+              <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
+              <div class="flex items-center space-x-3 ">
+                <img src="./Images/shoping.svg" alt="">
+                <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- card 5 -->
+      <div>
+        <div class="card lg:card-side bg-base-100 shadow-sm">
+          <figure><img src="./Images/9.png" alt="Movie" /></figure>
 
-      <h2 class="card-title font-extrabold text-[20px]">World Cup Football</h2>
-      <p class="text-[16px] font-medium opacity-70">we provides the best performance and quality</p>
-<div class="flex">
-  <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
-  <div class="flex items-center space-x-3 ">
-    <img src="./Images/shoping.svg" alt="">
-    <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
-  </div>
-</div>
+          <div class="card-body">
+
+            <div class="flex space-x-4">
+              <div class="flex items-center space-x-1">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-brands fa-gratipay"></i>
+                <p>200</p>
+              </div>
+            </div>
+
+            <h2 class="card-title font-extrabold text-[20px]">World Cup Hockey Helmat</h2>
+            <p class="text-[16px] font-medium opacity-70">Our stylish Men's Multi-Sport Hockey Helmat provides the
+              perfect combination of performance and quality</p>
+            <div class="flex">
+              <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
+              <div class="flex items-center space-x-3 ">
+                <img src="./Images/shoping.svg" alt="">
+                <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card 6 -->
+      <div>
+        <div class="card lg:card-side bg-base-100 shadow-sm">
+          <figure><img src="./Images/10.png" alt="Movie " /></figure>
+
+          <div class="card-body">
+
+            <div class="flex space-x-4">
+              <div class="flex items-center space-x-1">
+                <i class="fa-solid fa-star text-[#F99808]"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-brands fa-gratipay"></i>
+                <p>200</p>
+              </div>
+            </div>
+
+            <h2 class="card-title font-extrabold text-[20px]">World Cup Football</h2>
+            <p class="text-[16px] font-medium opacity-70">we provides the best performance and quality</p>
+            <div class="flex">
+              <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
+              <div class="flex items-center space-x-3 ">
+                <img src="./Images/shoping.svg" alt="">
+                <p class="text-[16px] font-medium opacity-70">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+
     </div>
-  </div>
-</div>
 
-
-</div>
-
-</section>
+  </section>
 
   <!-- Clients Question text-->
 
@@ -519,7 +520,7 @@ boder{body: 2px dashed blue;}
 
   <!-- Clients Question faq-->
 
-  <section class="md:container md:mx-auto mb-10 my-24">
+  <!-- <section class="md:container md:mx-auto mb-10 my-24">
     <div class="flex justify-between">
 
       <div class="hero min-h-screen bg-base-200">
@@ -562,9 +563,9 @@ boder{body: 2px dashed blue;}
 
     </div>
 
-  </section>
+  </section> -->
 
-
+  <!-- not this one -->
   <!-- <section class="md:container md:mx-auto mb-10 my-24">
 
   <div class="hero">
@@ -623,32 +624,33 @@ boder{body: 2px dashed blue;}
 
   <!-- Get In Touch from -->
 
+
   <section class="md:container md:mx-auto lg:mt-14 mb-10 my-24">
 
 
     <div class="grid grid-cols-1 lg:grid-cols-3">
 
-      <div class=" bg-[ #FFF] shadow-lg w-[450px] h-[725px] rounded-xl pl-10 pt-8 ">
+      <div class=" bg-[ #FFF] shadow-lg lg:w-[450px] h-[725px] rounded-xl lg:pl-10 pt-8 ">
 
-        <div class="bg-[#BCED6D1A] w-[374px] h-[216px] rounded-2xl pt-14 pl-8 mb-4">
+        <div class="bg-[#BCED6D1A] lg:w-[374px] h-[216px] rounded-2xl pt-14 pl-8 mb-4">
 <img src="./Images/Group 1171275317.png" alt="">
-<p class="w-[309px] text-[16px] font-normal">Phone Number : <br> 
+<p class="lg:w-[309px] text-[16px] font-normal">Phone Number : <br> 
   (+62) 123-321-543</p>
         </div>
-        <div class="bg-[#FDDD5F1A] w-[374px] h-[216px] rounded-2xl pt-14 mb-4 pl-8">
+        <div class="bg-[#FDDD5F1A] lg:w-[374px] h-[216px] rounded-2xl pt-14 mb-4 pl-8">
 <img src="./Images/Group 1171275318.png" alt="">
-<p class="w-[309px] text-[16px] font-normal">Email : <br>
+<p class="lg:w-[309px] text-[16px] font-normal">Email : <br>
   hockeys@support.com</p>
         </div>
-        <div class="bg-[#629CF31A] w-[374px] h-[216px] rounded-2xl pt-14 pl-8">
+        <div class="bg-[#629CF31A] lg:w-[374px] h-[216px] rounded-2xl pt-14 pl-8">
 <img src="./Images/Group 1171275321.png" alt="">
-<p class="w-[309px] text-[16px] font-normal">Location : <br>
+<p class="lg:w-[309px] text-[16px] font-normal">Location : <br>
   152/1 Mohakhali Wireless Gate</p>
         </div>
 
       </div>
 
-      <div class="lg:col-span-2 pl-6">
+      <div class="lg:col-span-2 lg:pl-6">
 
         <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 text-[20px]  font-bold">
           <div>
@@ -679,20 +681,80 @@ boder{body: 2px dashed blue;}
     </div>
   </section>
 
-<section class="md:container md:mx-auto mb-10 my-12">
 
-  <div class="bg-[#13131808] h-[150px] rounded-xl flex justify-center flex-col items-center">
-<h1 class="text-[24px] font-extrabold">Social Media</h1>
-<div class="space-x-8">
-  <i class="fa-brands fa-twitter"></i>
-  <i class="fa-brands fa-facebook-f"></i>
-  <i class="fa-brands fa-instagram"></i>
-  <i class="fa-brands fa-github"></i>
-</div>
+  <!-- <section class="md:container md:mx-auto lg:mt-14 mb-10 my-24">
 
-  </div>
 
-</section>
+
+
+    
+     <div class="grid grid-cols-1 lg:grid-cols-3">
+
+
+        <div class="bg-[#BCED6D1A] w-[374px] h-[216px] rounded-2xl pt-14 pl-8 mb-4">
+<img src="./Images/Group 1171275317.png" alt="">
+<p class="w-[309px] text-[16px] font-normal">Phone Number : <br> 
+  (+62) 123-321-543</p>
+        </div>
+        <div class="bg-[#FDDD5F1A] w-[374px] h-[216px] rounded-2xl pt-14 mb-4 pl-8">
+<img src="./Images/Group 1171275318.png" alt="">
+<p class="w-[309px] text-[16px] font-normal">Email : <br>
+  hockeys@support.com</p>
+        </div>
+        <div class="bg-[#629CF31A] w-[374px] h-[216px] rounded-2xl pt-14 pl-8">
+<img src="./Images/Group 1171275321.png" alt="">
+<p class="w-[309px] text-[16px] font-normal">Location : <br>
+  152/1 Mohakhali Wireless Gate</p>
+        </div>
+
+      </div>  
+
+      <div class="lg:col-span-2 grid-cols-1 pl-6">
+
+        <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 text-[20px]  font-bold">
+          <div>
+            <label for="">Your Name</label>
+            <input type="text" placeholder="Enter your full name" class="mt-2 input input-bordered w-full " />
+          </div>
+          <div>
+            <label for="">Your Email</label>
+            <input type="text" placeholder="Enter your email" class=" mt-2 input input-bordered w-full " />
+          </div>
+          <div>
+            <label for="">Subject</label>
+            <input type="text" placeholder="Enter your subject" class=" mt-2 input input-bordered w-full " />
+          </div>
+          <div>
+            <label for="">Phone Number</label>
+            <input type="text" placeholder="Enter your phon number" class=" mt-2 input input-bordered w-full " />
+          </div>
+        </div>
+
+        <div class="mt-8 text-[20px] font-bold">
+          <label for="">Message</label>
+          <textarea class="textarea w-full  textarea-bordered" placeholder="Write your message" rows="13"></textarea>
+        </div>
+        <button class="w-full mt-7 bg-[#FF4240] py-3 rounded-lg">Send Message</button>
+      </div>
+
+    </div> 
+  </section> -->
+
+  <!-- get touch social contact -->
+  <section class="md:container md:mx-auto mb-10 my-12">
+
+    <div class="bg-[#13131808] h-[150px] rounded-xl flex justify-center flex-col items-center">
+      <h1 class="text-[24px] font-extrabold">Social Media</h1>
+      <div class="space-x-8">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+
+    </div>
+
+  </section>
 
 </body>
 
