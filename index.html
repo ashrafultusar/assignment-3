@@ -45,8 +45,9 @@
       font-family: 'Manrope', sans-serif;
     }
 
-    .boder {
 
+
+    .boder {
       * {
         border: 1px solid red;
       }
@@ -95,8 +96,15 @@
 
 
         <div class=" space-x-4">
-          <img src="./Images/search.svg" alt="">
-          <button class="text-white text-sm font-bold bg-[#FF4240] px-6 py-3 rounded-md ">Get Ticket</button>
+
+         <div class="lg:flex hidden">
+           <img src="./Images/search.svg" alt="">
+        </div>
+
+         <div>
+          <button class="text-white text-sm font-bold bg-[#FF4240] lg:px-6 px-2 lg:py-3 py-2 rounded-md ">Get Ticket</button>
+         </div>
+
         </div>
       </div>
     </nav>
@@ -252,8 +260,31 @@
 
   <!-- Program Sections grid-->
 
+<!-- 
+<section class="md:container md:mx-auto mt-8 mb-12">
 
-  <section class="md:container mx-auto ">
+<div class="img-container">
+
+  <div class="item-1">
+<img src="./Images/2.png" alt="">
+  </div>
+
+  <div class="item-2">
+    <img src="./Images/3.png" alt="">
+  </div>
+
+  <div class="item-3">
+    <img src="./Images/4.png" alt="">
+  </div>
+
+</div>
+
+
+</section> -->
+
+
+
+   <section class="md:container mx-auto ">
 
 
 <div class="grid gap-4  grid-cols-1 md:grid-cols-2">
@@ -273,7 +304,7 @@
 <div class="relative">
   <img class="w-full" src="./Images/3.png" alt="">
 
-  <div class="absolute  lg:translate-x-8 space-y-4  mt-28 -translate-y-80">
+  <div class="absolute lg:translate-x-8 space-y-4  mt-28 -translate-y-80">
     <h1 class="text-xl font-extrabold text-white">Teenager Program</h1>
     <p class="lg:w-[495px]  text-[16px] font-medium">Many associations require players to be five years old. Kids that start hockey before they are physically and mentally ready are more likely to have a negative experience..</p>
       <button class="bg-[#FF4240] px-12 py-2 text-sm font-bold rounded-lg text-white">Register Now!</button>
@@ -293,7 +324,7 @@
 
 </div>
 
-  </section>
+  </section> 
 
 
   <!-- Our New Products -->
@@ -726,35 +757,42 @@
 
       <!-- foot left -->
 
-      <div class="ml-12">
-        <h1 class="text-[28px] font-extrabold text-[#FFF;]">Get In Touch</h1>
-        <p class="text-[16px] font-medium opacity-70 lg:w-[340px]">Dit amet consectetur. Condimentum adipiscing
+      <div class=" lg:text-left text-center ">
+       <div>
+        <h1 class="text-[28px] pb-3 font-extrabold text-[#FFF;] ">Get In Touch</h1>
+        <p class="text-[16px]  pb-2 font-medium opacity-70 lg:w-[340px]">Dit amet consectetur. Condimentum adipiscing
           aliquam
           turpis placerat dolor. Purus urna in sit nullam proin. </p>
 
-        <div class="flex">
-          <img src="./Images/Frame.png" alt="">
-          <p>hockeys@support.com</p>
-        </div>
-
-        <div class="flex">
-          <img src="./Images/Frame (1).png" alt="">
-          <p>(+62) 123-321-543</p>
-        </div>
+        
+          <div class="flex text-left  pb-2">
+            <img src="./Images/Frame.png" alt="">
+            <p>hockeys@support.com</p>
+          </div>
+  
+          <div class="flex">
+            <img src="./Images/Frame (1).png" alt="">
+            <p>(+62) 123-321-543</p>
+          </div>
+      
+       </div>
       </div>
 
       <!-- foot middil -->
 
 
-      <div class="grid ml-8  grid-cols-2 space-x-6">
+      <div class="flex lg:gap-14 gap-12">
 
-        <div>
+        <div >
           <h3 class="text-[16px] font-bold">Company</h3>
-          <p class="text-[16px] font-medium opacity-70">About us <br>
-            Leadership <br>
-            Careers <br>
-            News & Article <br>
-            Legal Notice</p>
+          <p class="text-[16px] font-medium opacity-70">About us </p>
+          <p class="text-[16px] font-medium opacity-70"> Leadership </p>
+          <p class="text-[16px] font-medium opacity-70">Careers 
+            </p>
+          <p class="text-[16px] font-medium opacity-70">News & Article 
+             </p>
+          <p class="text-[16px] font-medium opacity-70">Legal Notice
+             </p>
         </div>
 
         <div>
@@ -769,13 +807,18 @@
 
       <!-- foot right -->
 
-      <div class="ml-28">
-        <h3 class="text-[16px] font-bold ">Support</h3>
-        <p class="text-[16px] font-medium opacity-70">Academy <br>
-          Group Lesson <br>
-          Private Lesson <br>
-          Hockeys for kids <br>
-          Hockeys for Adult </p>
+      <div class=" ml-14 lg:text-left text-center ">
+       
+      <div>
+        <h3 class="text-[16px] pb-2 lg:text-start font-bold ">Support</h3>
+        <p class="text-[16px] pb-2 font-medium opacity-70">Academy </p>
+        <p class="text-[16px] pb-2 font-medium opacity-70"> Group Lesson </p>
+        <p class="text-[16px] pb-2 font-medium opacity-70">Private Lesson </p>
+        <p class="text-[16px] pb-2 font-medium opacity-70"> Hockeys for kids</p>
+        <p class="text-[16px] font-medium opacity-70">Hockeys for Adult</p>
+         
+      </div>
+        
       </div>
 
     </footer>
